@@ -992,6 +992,25 @@ struct BurnDriver BurnDrvsnes_Aaahhrm = {
 	512, 448, 4, 3
 };
 
+// Aaahh!!! Real Monsters (Euro)
+
+static struct BurnRomInfo snes_AaahhrmeRomDesc[] = {
+	{ "Aaahh!!! Real Monsters (E)(1995)(Viacom New Media).sfc", 2097152, 0x946313fb, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Aaahhrme)
+STD_ROM_FN(snes_Aaahhrme)
+
+struct BurnDriver BurnDrvsnes_Aaahhrme = {
+	"snes_aaahhrme", "snes_aaahhrm", NULL, NULL, "1995",
+	"Aaahh!!! Real Monsters (Euro)\0", NULL, "Viacom New Media", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_AaahhrmeRomInfo, snes_AaahhrmeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Andre Agassi Tennis (USA)
 
 static struct BurnRomInfo snes_AatennisRomDesc[] = {
@@ -1163,6 +1182,25 @@ struct BurnDriver BurnDrvsnes_Acmeanimfact = {
 	512, 448, 4, 3
 };
 
+// ACME Animation Factory (Euro)
+
+static struct BurnRomInfo snes_AcmeanimfacteRomDesc[] = {
+	{ "ACME Animation Factory (E)(1994)(Sunsoft - Probe).sfc", 1048576, 0xaad3a72d, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Acmeanimfacte)
+STD_ROM_FN(snes_Acmeanimfacte)
+
+struct BurnDriver BurnDrvsnes_Acmeanimfacte = {
+	"snes_acmeanimfacte", "snes_acmeanimfact", NULL, NULL, "1994",
+	"ACME Animation Factory (Euro)\0", "'SNES Mouse' compatible game (Set Dipswitches)", "Sunsoft - Probe", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_MISC, 0,
+	SNESGetZipName, snes_AcmeanimfacteRomInfo, snes_AcmeanimfacteRomName, NULL, NULL, NULL, NULL, SNESMouseInputInfo, SNESMouseP1DIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Aero the Acro-Bat (USA)
 
 static struct BurnRomInfo snes_AcrobatRomDesc[] = {
@@ -1311,6 +1349,25 @@ struct BurnDriver BurnDrvsnes_Actraiser2 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_ADV, 0,
 	SNESGetZipName, snes_Actraiser2RomInfo, snes_Actraiser2RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// ActRaiser 2 (Euro)
+
+static struct BurnRomInfo snes_Actraiser2eRomDesc[] = {
+	{ "ActRaiser 2 (E)(1993)(Enix - Quintet).sfc", 1572864, 0x630e16a1, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Actraiser2e)
+STD_ROM_FN(snes_Actraiser2e)
+
+struct BurnDriver BurnDrvsnes_Actraiser2e = {
+	"snes_actraiser2e", "snes_actraiser2", NULL, NULL, "1993",
+	"ActRaiser 2 (Euro)\0", NULL, "Enix/Quintet", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_ADV, 0,
+	SNESGetZipName, snes_Actraiser2eRomInfo, snes_Actraiser2eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -1615,6 +1672,25 @@ struct BurnDriver BurnDrvsnes_Advdrfrank = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_AdvdrfrankRomInfo, snes_AdvdrfrankRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Adventures of Dr. Franken, The (Euro)
+
+static struct BurnRomInfo snes_AdvdrfrankeRomDesc[] = {
+	{ "Adventures of Dr. Franken, The (E)(1993)(DTMC).sfc", 1048576, 0xe4925f15, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Advdrfranke)
+STD_ROM_FN(snes_Advdrfranke)
+
+struct BurnDriver BurnDrvsnes_Advdrfranke = {
+	"snes_advdrfranke", "snes_advdrfrank", NULL, NULL, "1993",
+	"Adventures of Dr. Franken, The (Euro)\0", NULL, "DTMC", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_AdvdrfrankeRomInfo, snes_AdvdrfrankeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -19581,6 +19657,44 @@ struct BurnDriver BurnDrvsnes_Mlbpabb = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_MlbpabbRomInfo, snes_MlbpabbRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Mighty Max (USA)
+
+static struct BurnRomInfo snes_MightymaxRomDesc[] = {
+	{ "Mighty Max (U)(1994)(Ocean).sfc", 1048576, 0x6fc3c105, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Mightymax)
+STD_ROM_FN(snes_Mightymax)
+
+struct BurnDriver BurnDrvsnes_Mightymax = {
+	"snes_mightymax", NULL, NULL, NULL, "1994",
+	"Mighty Max (USA)\0", NULL, "Ocean", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MightymaxRomInfo, snes_MightymaxRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Mighty Max (Euro)
+
+static struct BurnRomInfo snes_MightymaxeRomDesc[] = {
+	{ "Mighty Max (E)(1994)(Ocean).sfc", 1048576, 0x62a7c74b, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Mightymaxe)
+STD_ROM_FN(snes_Mightymaxe)
+
+struct BurnDriver BurnDrvsnes_Mightymaxe = {
+	"snes_mightymaxe", "snes_mightymax", NULL, NULL, "1994",
+	"Mighty Max (Euro)\0", NULL, "Ocean", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MightymaxeRomInfo, snes_MightymaxeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -38549,25 +38663,6 @@ struct BurnDriver BurnDrvsnes_Micromages2 = {
 // https://www.smwcentral.net/?p=section&a=details&id=29774
 static struct BurnRomInfo snes_MiniquestRomDesc[] = {
 	{ "Legend of Zelda, The - The Mini Quest v1.1 (2022)(MaxwelHacks).sfc", 3145728, 0xcaa6a1f3, BRF_ESS | BRF_PRG },
-};
-
-// Mighty Max (USA)
-
-static struct BurnRomInfo snes_MightymaxRomDesc[] = {
-	{ "Mighty Max (U)(1994)(Ocean).sfc", 1048576, 0x6fc3c105, BRF_ESS | BRF_PRG },
-};
-
-STD_ROM_PICK(snes_Mightymax)
-STD_ROM_FN(snes_Mightymax)
-
-struct BurnDriver BurnDrvsnes_Mightymax = {
-	"snes_mightymax", NULL, NULL, NULL, "1994",
-	"Mighty Max (USA)\0", NULL, "Ocean", "SNES / Super Famicom",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
-	SNESGetZipName, snes_MightymaxRomInfo, snes_MightymaxRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
-	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
-	512, 448, 4, 3
 };
 
 STD_ROM_PICK(snes_Miniquest)
